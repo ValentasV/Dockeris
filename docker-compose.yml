@@ -1,0 +1,24 @@
+version: '3.9'
+# services yra konfigūracijos parametrai nurodyti apačioje
+# volumes yra katalogai kurie prijungti prie serverio
+# portas ryšys su tinklalaliu 80 portas visi tinklalapiai veikia taip google.com:80
+# Sustabdyti dockerį su Ctrl + c, atnaujinti  ir paleisti   docker compose up
+# # Sustabdyti dockerio konteinerius   docker compose down
+#   docker compose down ps -a parodo kokie konteineriai pas jus egzistuoja
+#  docker image rm tautiz/web4study  pašalina dockerio imidža
+services:
+  web:
+    image: tautiz/web4study:latest
+    volumes:
+      - ./Valento_failai:/var/www/html/
+    user: web:web
+    ports:
+      - "80:80"
+    environment:
+      PHP_IDE_CONFIG: 'serverName=web.local'
+      APACHE_SERVER_NAME: web.local
+      APPLICATION_ENV: development
+      APACHE_LOG_DIR: /var/log/apache2
+      APACHE_DOCUMENT_ROOT: /var/www/html
+      APACHE_RUN_USER: web
+      APACHE_RUN_GROUP: web
