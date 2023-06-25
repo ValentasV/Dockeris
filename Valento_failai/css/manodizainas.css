@@ -1,0 +1,68 @@
+a {
+    background-color: blueviolet;
+    color: white;
+    /* color: #ff09AF; "spalvų pasirinkimai" */
+    /* color: rgb(255, 255, 60); */
+    text-decoration: none;
+    text-transform: uppercase;
+    /* color: #ff09AF; "spalvų pasirinkimai" */
+}
+/*<style>
+        a {
+            background-color: brown;
+        }
+        nav a:nth-of-type(8) {
+        background-color: red;
+        color: yellow;
+        }
+    </style> */
+p {
+    color: blue;
+}
+
+
+img {
+    border: 1px solid red;
+}
+
+table {
+background-color: black;
+    color: white;
+}
+
+form {
+background-color: darkblue;
+    color: Yellow;
+}
+
+footer {
+    color: red;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: DarkKhaki;
+}
+
+h3 {
+    color: ForestGreen;
+}
+
+input {
+    color: LightSalmon;
+}
+
+html {
+    background-color: Snow;
+}
+
+body {
+    background-color: Chartreuse;
+}
+
+footer {
+    background-color: black;
+}

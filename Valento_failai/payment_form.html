@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Mokėjimų lentelė</title>
+
+    <title>Mokėjimų lentelė</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/manodizainas.css">
+        <style>
+        fieldset {
+        border: 5px solid black;
+        margin: 25px 800px 80px 100px;
+        background-color: lightblue:
+        }
+
+        legend {
+        background-color: red;
+        color: black;
+        padding: 5px 20px;
+        }
+
+        input {
+        10px;
+        }
+        </style>
+
 </head>
 <body>
-    <h1 style="text-align:center;">Mokėjimo forma</h1>
-        <h3>Laukeliai kuriuos yra privaloma užpildyti pažymėti šiuo simboliu:<mark>&lowast;</mark></h3>
 
-            <h2>Kontaktinė informacija</h2>
+
+
+
 
                 <form action="payment.html" method="post" autocomplete="on"><br>
+                    <fieldset>
+                    <legend><h1 style="text-align:center;">Mokėjimo forma</h1></legend>
+                        <h3>Laukeliai kuriuos yra privaloma užpildyti pažymėti šiuo simboliu:<mark>&lowast;</mark></h3>
+                        <h2>Kontaktinė informacija</h2>
                     <label for="fn">
                         Vardas:&lowast;
                     <input type="text" id="fn" name="fn" required>
@@ -39,13 +63,12 @@
                     <br><br>
                     <label for="ccn">
                         Kredito kortelės numemris:&lowast;
-                    <input type="tel" id="ccn" name="ccn"  placeholder="0000-1111-2222-3333"
-                    pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"  required>
+                    <input type="text" id="ccn" name="ccn"  pattern=".{10,19}" title="Turi būti įrašyta nuo 10 iki 19 simbolių" required>
                     </label>
                     <br><br>
                     <label for="exd">
                         Galiojimo pabaiga:&lowast;
-                    <input type="date" id="exd" name="exd" required>
+                    <input type="date" id="exd" name="exd"  required>
                     </label>
                     <br><br>
 
@@ -56,9 +79,7 @@
                     <br><br>
 
                     <input type="submit" value="Pradėti mokėjimą"><br>
-
-
-
+                    </fieldset>
                 </form>
 </body>
 </html>
