@@ -1,29 +1,57 @@
-a {
-    background-color: blueviolet;
-    color: white;
-    /* color: #ff09AF; "spalvų pasirinkimai" */
-    /* color: rgb(255, 255, 60); */
-    text-decoration: none;
-    text-transform: uppercase;
-    /* color: #ff09AF; "spalvų pasirinkimai" */
-}
-/*<style>
-        a {
-            background-color: brown;
-        }
-        nav a:nth-of-type(8) {
-        background-color: red;
-        color: yellow;
-        }
-    </style> */
-p {
-    color: blue;
-}
-
-
 img {
-    border: 1px solid red;
+    display: block;
+    border: 7px solid green;
 }
+
+html, body {
+margin: 0 auto;
+}
+
+body > header > h1 {
+    text-align: center;
+}
+header {
+    padding: 20px;
+    background-color: LightGray;
+    color: black;
+}
+
+
+.meniu_item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 10px;
+  overflow: hidden;
+  background-color: #333;
+  float: right;
+  display: inline;
+  color: white;
+  text-align: right;
+  text-decoration: none;
+  background-color: #111;
+  border: 1px solid red;
+}
+
+
+body > aside {
+    border: 1px solid lightgray;
+}
+
+
+footer {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  height: 40px;
+  background: #D3D3D3;
+  color:  red;
+  font-size: 20px;
+}
+
+
 
 table {
 background-color: black;
@@ -33,36 +61,56 @@ background-color: black;
 form {
 background-color: darkblue;
     color: Yellow;
-}
 
-footer {
-    color: red;
-}
 
-h1 {
+
+/* nav a {
+    background-color: blueviolet;
     color: white;
-}
+    text-decoration: none;
+    text-transform: uppercase;
+} */
 
-h2 {
-    color: DarkKhaki;
-}
 
-h3 {
-    color: ForestGreen;
-}
+ /*main > section > p {
+    border: 8px double gray;
+    color: black;
+    background-color: cornsilk;
+    border-color: red;
+}*/
 
-input {
-    color: LightSalmon;
-}
 
-html {
-    background-color: Snow;
-}
 
-body {
-    background-color: Chartreuse;
-}
+/* nav > a */
+/* body > header > nav > * {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+    color: white;
+    padding: 1 10px;
+    border-right: 1px solid white;
+} */
 
-footer {
-    background-color: black;
-}
+
+/* body > header > nav > *:last-child {
+    border-right: none;
+} */
+
+/* color: #ff09AF; "spalvų pasirinkimai" */
+/* color: rgb(255, 255, 60); */
+ /* color: #ff09AF; "spalvų pasirinkimai" */
+/*<style>
+        a {
+            background-color: brown;
+        }
+        nav a:nth-of-type(8) {
+        background-color: red;
+        color: yellow;
+        }
+    </style> */
+
+/* img {
+    border: 1px solid red;
+} */
+
+

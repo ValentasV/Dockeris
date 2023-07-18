@@ -1,0 +1,51 @@
+.sachmatai {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: 150px;
+    /* ARBA TAIP  grid-template-rows: 150px 150px 150px 150px; */
+}
+
+html, body, section {
+  height: 100%;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+.sachmatai {
+width: 550px;
+}
+
+.sachmatai > div {
+ width: 75px;
+ height: 75px;
+ padding: 10px;
+ border: 3px solid black;
+ float: left;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: cadetblue;
+}
+
+/* .sachmatai > div:nth-of-type(5n+1) {
+  clear: left;
+} */
+
+.sachmatai > div:nth-of-type(4n+2) {
+  background: green;
+}
+
+.sachmatai > div:nth-of-type(4n+4) {
+  background: blue;
+}
+
+.sachmatai > div:nth-of-type(2n+16) {
+  background: red;
+}
+
+
+

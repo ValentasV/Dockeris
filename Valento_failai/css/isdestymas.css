@@ -1,0 +1,61 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+
+body > header {
+    grid-area: h;
+}
+
+body > aside {
+    grid-area: a;
+}
+
+body > main {
+    grid-area: m;
+}
+
+body > footer {
+    grid-area: ft;
+}
+
+body > header > h1 {
+    text-align: center;
+}
+
+body > aside > img {
+    display: block;
+    border: 7px solid green;
+    align: left;
+}
+
+
+/* Centruojame DIV taga esanti NAV tago viduje ir pastumiaim i desine puse */
+body > header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+body {
+    display: grid;
+    grid-template-areas:
+        "h h"
+        "a m"
+        "ft ft";
+    grid-template-columns: 200px auto;
+    grid-template-rows: 150px auto 300px;
+}
+
+}
+body > header {
+    grid-area: h;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+
+
+
+
