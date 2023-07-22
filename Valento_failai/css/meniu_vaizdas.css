@@ -1,0 +1,16 @@
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+
+.meniu > a {
+    transition: all 0.25s ease-in-out;
+}
+
+.meniu > a:hover {
+    background-color: #00FFFF;
+    color: #540400;
+    scale: 1.5;
+}

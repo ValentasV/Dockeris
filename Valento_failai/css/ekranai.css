@@ -1,0 +1,56 @@
+@media (max-width: 307px){
+    body {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        grid-template-areas:
+            "h h"
+            "m m"
+            "ft ft";
+    }
+
+    body > aside {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .mobile .meniu {
+        display: none;
+    }
+     .burger:hover .meniu {
+        display: block;
+     }
+
+     .burger .meniu {
+         background-color: deeppink;
+     }
+}
+
+
+@media only screen and (min-width: 600px) {
+    body {
+        grid-template-areas:
+            "h h"
+            "a a"
+            "m m"
+            "ft ft";
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    body {
+        grid-template-areas:
+            "h h"
+            "m m"
+            "a a"
+            "ft ft";
+    }
+}

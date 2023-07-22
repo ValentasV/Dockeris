@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Foto 1",
+    "img_url": "https://picsum.photos/200/300?random=1",
+    "tags": ["js", "html", "css", "python"]
+  },
+  {
+    "title": "Foto 2",
+    "img_url": "https://picsum.photos/200/300?random=2",
+    "tags": ["js", "python"]
+  },
+  {
+    "title": "Foto 3",
+    "img_url": "https://picsum.photos/200/300?random=3",
+    "tags": ["python"]
+  }
+]
